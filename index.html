@@ -3,157 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ishaan Puri | About Me</title>
-  <meta name="description" content="Ishaan Puri — student, founder of Sensair and Plant An Idea, researcher in physics and AI." />
+  <title>Ishaan Puri — Physics · AI · Founder</title>
+  <meta name="description" content="Ishaan Puri — student, founder of Sensair and Plant An Idea, researcher in physics and artificial intelligence." />
+  <meta property="og:title" content="Ishaan Puri" />
+  <meta property="og:description" content="Physics, AI, and building things that matter — Sensair & Plant An Idea." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Caslon+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===================== HERO ===================== -->
-  <header class="hero">
-    <img class="hero__bg" src="assets/img/hero.jpg" alt="" />
-    <div class="hero__title">
-      <span>Hello! I'm</span>
-      <span>Ishaan</span>
-    </div>
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top">Ishaan&nbsp;Puri</a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#creations">Creations</a>
+      <a href="#awards">Awards</a>
+      <a class="nav__cta" href="mailto:puri46388@sas.edu.sg">Contact</a>
+    </nav>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <img class="hero__bg" src="assets/img/hero.jpg" alt="" />
+    <div class="hero__scrim"></div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Hello, I'm</p>
+      <h1 class="hero__name">Ishaan&nbsp;Puri</h1>
+      <p class="hero__tag">Junior at Singapore American School building at the intersection of <em>physics</em> &amp; <em>artificial intelligence</em> — founder of <strong>Sensair</strong> and <strong>Plant&nbsp;An&nbsp;Idea</strong>.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#creations">View my work</a>
+        <a class="btn btn--ghost" href="mailto:puri46388@sas.edu.sg">Get in touch</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#about" aria-label="Scroll down">↓</a>
+  </section>
+
   <main>
-    <!-- ===================== ABOUT ===================== -->
+    <!-- ===== About ===== -->
     <section class="section" id="about">
-      <h2 class="section__title">About Me</h2>
-      <div class="section__rule"></div>
-      <div class="about">
-        <div class="about__photo">
-          <img src="assets/img/about-diver.jpg" alt="Ishaan freediving" />
-        </div>
-        <div class="about__text">
-          <p>Hey! My name is Ishaan, and I am currently a junior at Singapore American School. Before Singapore, I have lived in Bombay. I am really interested in physics and artificial intelligence, especially on how they can be used to solve real world problems. Most of my time outside of school is spent developing Sensair, a company I founded with my friend, using physics to address clear air turbulence.</p>
-          <p>In my free time, I enjoy playing tennis and golf, exploring nature, playing the drums, listening to System of a Down, DJing, and appreciating a medium-well ribeye. Please don't hesitate to get in touch!</p>
-          <p>Contact me at <a href="mailto:puri46388@sas.edu.sg"><strong>puri46388@sas.edu.sg</strong></a>.</p>
+      <div class="container">
+        <p class="eyebrow"><span>01</span> About</p>
+        <div class="about">
+          <div class="about__media reveal">
+            <img src="assets/img/about-diver.jpg" alt="Ishaan freediving" />
+            <span class="about__frame"></span>
+          </div>
+          <div class="about__text reveal">
+            <h2 class="lead">Hey! My name is Ishaan, and I'm currently a junior at Singapore American School.</h2>
+            <p>Before Singapore, I lived in Bombay. I'm really interested in physics and artificial intelligence — especially how they can be used to solve real-world problems. Most of my time outside school is spent developing <strong>Sensair</strong>, a company I founded with a friend, using physics to address clear-air turbulence.</p>
+            <p>In my free time I enjoy playing tennis and golf, exploring nature, playing the drums, listening to System of a Down, DJing, and appreciating a medium-well ribeye. Please don't hesitate to get in touch!</p>
+            <div class="about__contact">
+              <a class="chip" href="mailto:puri46388@sas.edu.sg">✉ puri46388@sas.edu.sg</a>
+              <a class="chip" href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener">in LinkedIn</a>
+              <a class="chip" href="https://github.com/puriishaan" target="_blank" rel="noopener">⌘ GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== EXPERIENCE ===================== -->
-    <section class="section" id="experience">
-      <h2 class="section__title">Experience</h2>
-      <div class="section__rule"></div>
-      <div class="exp">
-        <article class="exp__item">
-          <div class="exp__img"><img src="assets/img/exp-sensair.png" alt="Sensair logo" /></div>
-          <div class="exp__body">
-            <h3>Founder - Sensair</h3>
-            <p class="exp__date">2024 - Present</p>
-            <p>Founder of SensAir, an aviation technology initiative focused on addressing clear-air turbulence, one of aviation's most difficult-to-detect hazards. Led the development of a real-time, onboard turbulence detection approach that integrates physics-based sensing, data-driven modeling, and machine-learning analysis. Experience includes applied aerospace research, system design, technical validation, and translating complex scientific concepts into practical aviation solutions.</p>
-          </div>
-        </article>
-        <article class="exp__item">
-          <div class="exp__img"><img src="assets/img/exp-robotics.png" alt="Modular Robotics Lab logo" /></div>
-          <div class="exp__body">
-            <h3>Research Assistant - Modular Robotics Lab</h3>
-            <p class="exp__date">June 2025</p>
-            <p>Worked as a research assistant at the Penn GRASP Lab under Principal Investigator Edward Steager. Contributed to the Piccolissimo project, which focused on developing the world's smallest drone (29 mm diameter). Responsibilities included testing multiple frame designs and configurations, simulating flight dynamics using MATLAB, and building regression models to analyze experimental data and evaluate performance across design iterations.</p>
-          </div>
-        </article>
-        <article class="exp__item">
-          <div class="exp__img"><img src="assets/img/exp-quantum.png" alt="Center for Quantum Technologies logo" /></div>
-          <div class="exp__body">
-            <h3>Research Assistant - Center for Quantum Technologies</h3>
-            <p class="exp__date">July 2024 - February 2025</p>
-            <p>Worked with a research group to design permanent-magnet configurations that impose a Zeeman shift on barium ion energy levels, establishing a quantization axis for optical pumping and reliable ion state initialization. Created a magnetometer for magnet testing.</p>
-          </div>
-        </article>
-        <article class="exp__item">
-          <div class="exp__img"><img src="assets/img/leaf-logo.png" alt="Plant An Idea logo" /></div>
-          <div class="exp__body">
-            <h3>Founder - Plant An Idea</h3>
-            <p class="exp__date">Jan 2024 - Present</p>
-            <p>Founder of Plant an Idea, a student-led NGO focused on using technology-driven solutions to address challenges in agriculture and education in Assam, including the development of low-cost tools and STEM initiatives for underserved communities.</p>
-          </div>
-        </article>
+    <!-- ===== Experience ===== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <p class="eyebrow"><span>02</span> Experience</p>
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__logo"><img src="assets/img/exp-sensair.png" alt="Sensair" /></div>
+            <div class="tl__body">
+              <div class="tl__head"><h3>Founder — Sensair</h3><span class="tl__date">2024 – Present</span></div>
+              <p>Founder of SensAir, an aviation-technology initiative addressing clear-air turbulence, one of aviation's most difficult-to-detect hazards. Led development of a real-time, onboard turbulence-detection approach integrating physics-based sensing, data-driven modeling, and machine-learning analysis — spanning applied aerospace research, system design, technical validation, and translating complex science into practical aviation solutions.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__logo"><img src="assets/img/exp-robotics.png" alt="Modular Robotics Lab" /></div>
+            <div class="tl__body">
+              <div class="tl__head"><h3>Research Assistant — Modular Robotics Lab</h3><span class="tl__date">June 2025</span></div>
+              <p>Research assistant at the Penn GRASP Lab under PI Edward Steager, contributing to the Piccolissimo project — developing the world's smallest drone (29&nbsp;mm diameter). Tested multiple frame designs and configurations, simulated flight dynamics in MATLAB, and built regression models to analyze experimental data across design iterations.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__logo"><img src="assets/img/exp-quantum.png" alt="Center for Quantum Technologies" /></div>
+            <div class="tl__body">
+              <div class="tl__head"><h3>Research Assistant — Center for Quantum Technologies</h3><span class="tl__date">July 2024 – Feb 2025</span></div>
+              <p>Worked with a research group to design permanent-magnet configurations imposing a Zeeman shift on barium-ion energy levels, establishing a quantization axis for optical pumping and reliable ion-state initialization. Built a magnetometer for magnet testing.</p>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl__logo"><img src="assets/img/leaf-logo.png" alt="Plant An Idea" /></div>
+            <div class="tl__body">
+              <div class="tl__head"><h3>Founder — Plant An Idea</h3><span class="tl__date">Jan 2024 – Present</span></div>
+              <p>Founder of Plant An Idea, a student-led NGO using technology-driven solutions to address challenges in agriculture and education in Assam — including low-cost tools and STEM initiatives for underserved communities.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ===================== RESEARCH ===================== -->
+    <!-- ===== Research ===== -->
     <section class="section" id="research">
-      <h2 class="section__title">Research</h2>
-      <div class="section__rule"></div>
-      <div class="research">
-        <article class="paper">
-          <div class="paper__body paper__body--center">
-            <h3>Sensair paper.</h3>
-            <p>Coming Soon.</p>
-          </div>
-        </article>
-        <article class="paper">
-          <div class="paper__img"><img src="assets/img/research-cherenkov.png" alt="Cherenkov detector simulation" /></div>
-          <div class="paper__body">
-            <h3>Developing A Multi-Layered Cherenkov Detector</h3>
-            <p class="paper__meta">Advisor: Mr. Mir Faruk</p>
-            <p class="paper__meta">2025-04-01</p>
-            <p>This paper introduces a low-cost, modular multi-layered Cherenkov detector that identifies particles by comparing photon yield ratios across different dielectric media, eliminating the need for ring imaging. Simulations and cosmic-ray tests validate the approach, with a proposed CERN beamline test to demonstrate accurate particle discrimination across 1–15 GeV/c in an accessible, reproducible design.</p>
-          </div>
-        </article>
+      <div class="container">
+        <p class="eyebrow"><span>03</span> Research</p>
+        <div class="cards cards--2">
+          <article class="card card--paper reveal">
+            <span class="card__tag">Coming soon</span>
+            <h3>Sensair paper</h3>
+            <p>A forthcoming paper on real-time, physics-based clear-air turbulence detection. Stay tuned.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__media card__media--contain"><img src="assets/img/research-cherenkov.png" alt="Cherenkov detector simulation" /></div>
+            <div class="card__body">
+              <h3>Developing a Multi-Layered Cherenkov Detector</h3>
+              <p class="card__meta">Advisor: Mr. Mir Faruk · 2025-04-01</p>
+              <p>Introduces a low-cost, modular multi-layered Cherenkov detector that identifies particles by comparing photon-yield ratios across dielectric media, eliminating the need for ring imaging. Simulations and cosmic-ray tests validate the approach, with a proposed CERN beamline test to demonstrate accurate particle discrimination across 1–15&nbsp;GeV/c in an accessible, reproducible design.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== CREATIONS ===================== -->
-    <section class="section" id="creations">
-      <h2 class="section__title">Creations</h2>
-      <div class="section__rule"></div>
-      <div class="creations">
-        <article class="creation">
-          <div class="creation__img"><img src="assets/img/creation-cat.png" alt="CAT Sensor" /></div>
-          <h3>CAT Sensor</h3>
-          <p>A Clear Air Turbulence sensor, using doppler lidars, pulsed lasers, and machine learning analysis.</p>
-        </article>
-        <article class="creation">
-          <div class="creation__img"><img src="assets/img/creation-jarvis.png" alt="JARVIS" /></div>
-          <h3>JARVIS</h3>
-          <p>A multi-modal AI assistant that integrates natural language processing, hand-gesture recognition, and real-time system control. Built in Python using the Orgo API, it helps users control their OS with simple commands.</p>
-        </article>
-        <article class="creation">
-          <div class="creation__img"><img src="assets/img/creation-seedplanter.png" alt="Smart Seed Planter" /></div>
-          <h3>Smart Seed Planter</h3>
-          <p>A seed planter which connects via bluetooth to farmers' phones. Has an automatic germination sprayer, AI scanner for bad seeds, and IR sensors for precision farming metrics.</p>
-        </article>
-        <article class="creation">
-          <div class="creation__img"><img src="assets/img/creation-datacrunch.png" alt="Data Crunch" /></div>
-          <h3>Data Crunch</h3>
-          <p>Built utilising Google Console; created algorithms to analyze data from the Piccolissimo flight testing.</p>
-        </article>
+    <!-- ===== Creations ===== -->
+    <section class="section section--alt" id="creations">
+      <div class="container">
+        <p class="eyebrow"><span>04</span> Creations</p>
+        <div class="cards cards--4">
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/img/creation-cat.png" alt="CAT Sensor" /></div>
+            <div class="card__body">
+              <h3>CAT Sensor</h3>
+              <p>A clear-air-turbulence sensor using doppler lidars, pulsed lasers, and machine-learning analysis.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/img/creation-jarvis.png" alt="JARVIS" /></div>
+            <div class="card__body">
+              <h3>JARVIS</h3>
+              <p>A multi-modal AI assistant integrating natural-language processing, hand-gesture recognition, and real-time system control. Built in Python on the Orgo API to control your OS with simple commands.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/img/creation-seedplanter.png" alt="Smart Seed Planter" /></div>
+            <div class="card__body">
+              <h3>Smart Seed Planter</h3>
+              <p>A bluetooth-connected seed planter with an automatic germination sprayer, an AI scanner for bad seeds, and IR sensors for precision-farming metrics.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__media"><img src="assets/img/creation-datacrunch.png" alt="Data Crunch" /></div>
+            <div class="card__body">
+              <h3>Data Crunch</h3>
+              <p>Built on Google Console; created algorithms to analyze data from the Piccolissimo flight testing.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== AWARDS ===================== -->
+    <!-- ===== Awards ===== -->
     <section class="section" id="awards">
-      <h2 class="section__title">Awards &amp; Accolades</h2>
-      <div class="section__rule"></div>
-      <ul class="awards">
-        <li>Pete Conrad Scholar</li>
-        <li>Singapore Physics Olympiad Gold Medal</li>
-        <li>Orgo Agentic AI Hackathon Winner</li>
-        <li>Reverie Hacks Datathon First Place</li>
-        <li>TKKYIA Young Inventors Award</li>
-        <li>Beamline for Schools shortlist</li>
-        <li>AP Scholar With Distinction</li>
-        <li>BIEA STEM 2025 Chairmen's Award</li>
-        <li>JA Company Award</li>
-      </ul>
+      <div class="container">
+        <p class="eyebrow"><span>05</span> Awards &amp; Accolades</p>
+        <ul class="awards reveal">
+          <li><span class="awards__mark">★</span>Pete Conrad Scholar</li>
+          <li><span class="awards__mark">★</span>Singapore Physics Olympiad — Gold Medal</li>
+          <li><span class="awards__mark">★</span>Orgo Agentic AI Hackathon — Winner</li>
+          <li><span class="awards__mark">★</span>Reverie Hacks Datathon — First Place</li>
+          <li><span class="awards__mark">★</span>TKKYIA Young Inventors Award</li>
+          <li><span class="awards__mark">★</span>Beamline for Schools — Shortlist</li>
+          <li><span class="awards__mark">★</span>AP Scholar with Distinction</li>
+          <li><span class="awards__mark">★</span>BIEA STEM 2025 — Chairmen's Award</li>
+          <li><span class="awards__mark">★</span>JA Company Award</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Contact CTA ===== -->
+    <section class="cta" id="contact">
+      <div class="container cta__inner reveal">
+        <h2>Let's build something.</h2>
+        <p>Whether it's physics, AI, or an idea worth planting — I'd love to hear from you.</p>
+        <a class="btn btn--solid" href="mailto:puri46388@sas.edu.sg">puri46388@sas.edu.sg</a>
+      </div>
     </section>
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- ===== Footer ===== -->
   <footer class="footer">
-    <span>© 2035 by Ishaan Puri.</span>
-    <a class="footer__social" href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#000"/><path fill="#fff" d="M8.34 9.69H6.06V17h2.28V9.69zM7.2 6.5a1.32 1.32 0 100 2.64 1.32 1.32 0 000-2.64zM18 13.2c0-2.1-1.12-3.08-2.62-3.08-1.2 0-1.74.66-2.04 1.13v-.97h-2.28V17h2.28v-4.07c0-.21.02-.43.08-.58.17-.43.56-.88 1.22-.88.86 0 1.2.65 1.2 1.61V17H18v-3.8z"/></svg>
-    </a>
+    <div class="container footer__inner">
+      <span>© <span id="yr"></span> Ishaan Puri</span>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/ishaanpuri2008/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/puriishaan" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:puri46388@sas.edu.sg">Email</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
