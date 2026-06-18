@@ -1,0 +1,176 @@
+/* ===== Ishaan Puri — About Me (faithful recreation of the Wix site) ===== */
+:root{
+  --bg:#efeeec;
+  --ink:#0b0b0b;
+  --muted:#333;
+  --accent:#116dff;     /* Wix link/accent blue */
+  --card:#ffffff;
+  --maxw:1140px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;}
+a{color:inherit;}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;
+  height:62vh;
+  min-height:420px;
+  overflow:hidden;
+  background:#caa;
+}
+.hero__bg{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 40%;
+}
+.hero__title{
+  position:relative;
+  z-index:1;
+  text-align:center;
+  padding-top:.4em;
+  font-family:'Libre Caslon Display',Georgia,'Times New Roman',serif;
+  color:#000;
+  line-height:.98;
+}
+.hero__title span{display:block;}
+.hero__title span:first-child{font-size:clamp(2.6rem,8vw,7rem);}
+.hero__title span:last-child{font-size:clamp(3.6rem,11vw,9.4rem);}
+
+/* ===== Section scaffolding ===== */
+.section{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:72px 24px 24px;
+}
+.section__title{
+  text-align:center;
+  font-weight:800;
+  letter-spacing:-.01em;
+  font-size:clamp(2.2rem,5vw,3.6rem);
+  margin:0 0 18px;
+}
+.section__rule{
+  width:120px;height:5px;border-radius:2px;
+  background:var(--accent);
+  margin:0 auto 48px;
+}
+
+/* ===== About ===== */
+.about{
+  display:grid;
+  grid-template-columns:minmax(0,360px) 1fr;
+  gap:56px;
+  align-items:start;
+}
+.about__photo img{
+  width:100%;
+  aspect-ratio:351/430;
+  object-fit:cover;
+  box-shadow:0 18px 40px rgba(0,0,0,.16);
+}
+.about__text p{margin:0 0 18px;}
+.about__text a{color:var(--ink);text-decoration:none;}
+.about__text a:hover{text-decoration:underline;}
+
+/* ===== Experience (image left / text right list) ===== */
+.exp{display:flex;flex-direction:column;gap:48px;}
+.exp__item{
+  display:grid;
+  grid-template-columns:230px 1fr;
+  gap:40px;
+  align-items:start;
+}
+.exp__img{
+  width:230px;height:230px;
+  background:#000;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.exp__img img{width:100%;height:100%;object-fit:cover;}
+.exp__body h3{font-size:1.45rem;font-weight:700;margin:.2em 0 .15em;}
+.exp__date{font-style:italic;color:var(--muted);margin:0 0 .8em;}
+.exp__body p{margin:0;}
+
+/* ===== Research ===== */
+.research{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:32px;
+}
+.paper{
+  background:var(--card);
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+  display:flex;flex-direction:column;
+}
+.paper__img img{width:100%;height:220px;object-fit:contain;background:#fff;padding:16px;}
+.paper__body{padding:26px 28px 30px;}
+.paper__body--center{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:260px;}
+.paper__body h3{font-size:1.3rem;font-weight:700;margin:0 0 .5em;}
+.paper__meta{font-style:italic;color:var(--muted);margin:0 0 .25em;}
+.paper__body p{margin:.5em 0 0;}
+
+/* ===== Creations ===== */
+.creations{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:28px;
+}
+.creation__img{
+  width:100%;height:230px;
+  background:#fff;
+  overflow:hidden;
+  margin-bottom:16px;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+.creation__img img{width:100%;height:100%;object-fit:cover;}
+.creation h3{font-size:1.2rem;font-weight:700;margin:0 0 .4em;}
+.creation p{margin:0;font-size:.95rem;}
+
+/* ===== Awards ===== */
+.awards{
+  max-width:760px;
+  margin:0 auto;
+  padding-left:22px;
+  font-size:1.15rem;
+}
+.awards li{margin:.35em 0;}
+
+/* ===== Footer ===== */
+.footer{
+  max-width:var(--maxw);
+  margin:64px auto 0;
+  padding:40px 24px 56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  color:var(--muted);
+}
+.footer__social{display:inline-flex;}
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .creations{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:760px){
+  .about{grid-template-columns:1fr;gap:28px;}
+  .about__photo{max-width:340px;margin:0 auto;}
+  .exp__item{grid-template-columns:1fr;gap:18px;}
+  .exp__img{width:100%;height:auto;aspect-ratio:16/10;}
+  .section{padding-top:56px;}
+}
+@media (max-width:540px){
+  .creations{grid-template-columns:1fr;}
+}
