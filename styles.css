@@ -132,6 +132,8 @@ a{color:inherit;text-decoration:none;}
 .card--paper{justify-content:center;padding:34px 30px;min-height:240px;background:linear-gradient(135deg,#1b1e27,#2b2f3d);color:#fff;border:none;}
 .card--paper h3{font-family:var(--serif);font-size:1.7rem;margin-bottom:10px;}
 .card--paper p{color:rgba(255,255,255,.72);font-size:.95rem;}
+.card--paper .tl__link{color:#9fb0ff;}
+.card--paper .tl__link:hover{border-color:#9fb0ff;}
 .card__tag{font-family:var(--mono);text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;color:#9fb0ff;margin-bottom:14px;}
 
 /* ===== Awards ===== */
@@ -140,10 +142,6 @@ a{color:inherit;text-decoration:none;}
 .section .awards li{background:var(--paper-2);}
 .awards li:hover{border-color:var(--accent);transform:translateY(-2px);}
 .awards__mark{color:var(--accent);font-size:1rem;}
-.proof-cta{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:13px;text-align:center;}
-.btn-proof{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:600;font-size:1rem;padding:14px 28px;border-radius:999px;transition:transform .2s var(--ease),background .2s,box-shadow .2s;}
-.btn-proof:hover{background:var(--accent-ink);transform:translateY(-2px);box-shadow:0 12px 30px rgba(43,68,219,.32);}
-.proof-cta__note{font-family:var(--mono);font-size:.8rem;color:var(--ink-soft);max-width:440px;line-height:1.5;}
 
 /* ===== CTA ===== */
 .cta{background:var(--ink);color:#fff;padding:110px 0;text-align:center;}
