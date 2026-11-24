@@ -255,7 +255,7 @@ tfoot td{font-weight:700;border-top:2px solid var(--ink);border-bottom:0}
 .terms p{font-size:.92rem;color:var(--ink-2)}
 .formula{font-family:var(--display);font-size:1.5rem;font-weight:600;letter-spacing:.02em}
 .tests{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.test{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:start}
+.test{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
 .test .slot{border:0;background:none;padding:0;min-height:0;aspect-ratio:auto;width:84px;align-items:center;gap:6px;overflow:visible}
 .test .slot .what{width:84px;height:84px;border-radius:50%;border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:.74rem;color:var(--ink-2);font-weight:400}
 .test .slot .hintt,.test .slot .kind,.test .slot figcaption{display:none}
@@ -734,7 +734,7 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
   <div class="sec">
     <h2>Files</h2>
     <p class="muted" style="max-width:68ch">My final design, free to download and change.</p>
-    <div class="cards"><div class="card"><h3>The whole aircraft, STL</h3><p>One STL file of the final design, exported from Fusion 360. It is 5.9 MB and its dimensions are in millimetres. Open it in a slicer or any CAD program.</p><p><a class="btn" href="https://ishaanpuri23.com/evtol/files/catalyst-evtol.stl" download>Download the STL</a></p></div></div>
+    <div class="cards"><div class="card"><h3>The whole aircraft, STL</h3><p>One STL file of the final design, exported from Fusion 360. It is 5.9 MB and its dimensions are in millimetres. Open it in a slicer or any CAD program.</p><p><a class="btn" href="https://ishaanpuri23.com/evtol/files/catalyst-evtol.stl">Download the STL</a></p></div></div>
   </div>
 
   <div class="sec">
@@ -783,14 +783,13 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
  <div class="wrap">
   <div class="lede">
     <h1>Testimonials</h1>
-    <p>What people said after flying the simulator or following the build guide, and how they used it.</p>
+    <p>Feedback from three people who want to build an eVTOL and have started on the early steps. They have not built with this guide yet. This is what they told me after reviewing the site.</p>
   </div>
   <div class="tests">
-    <div class="test"><figure class="slot" data-slot="t1-photo" data-kind="photo" data-label="Photo"></figure><div style="display:flex;flex-direction:column;gap:8px"><span class="who empty" data-text="t1-name">Reviewer's name</span><span class="small muted" data-text="t1-use">How they used it</span><blockquote class="empty" data-text="t1-quote">Their review goes here.</blockquote></div></div>
-    <div class="test"><figure class="slot" data-slot="t2-photo" data-kind="photo" data-label="Photo"></figure><div style="display:flex;flex-direction:column;gap:8px"><span class="who empty" data-text="t2-name">Reviewer's name</span><span class="small muted" data-text="t2-use">How they used it</span><blockquote class="empty" data-text="t2-quote">Their review goes here.</blockquote></div></div>
-    <div class="test"><figure class="slot" data-slot="t3-photo" data-kind="photo" data-label="Photo"></figure><div style="display:flex;flex-direction:column;gap:8px"><span class="who empty" data-text="t3-name">Reviewer's name</span><span class="small muted" data-text="t3-use">How they used it</span><blockquote class="empty" data-text="t3-quote">Their review goes here.</blockquote></div></div>
+    <div class="test"><div style="display:flex;flex-direction:column;gap:8px"><span class="who">Vihaan Kaira</span><span class="small muted">Student at SAS, involved in many engineering projects</span><p style="margin:0;font-size:.95rem">Vihaan has wanted to build drones for a long time but did not know how to begin. He said the site gave him a clear direction to start. He had also been confused about which materials he needed and could not find a list anywhere, and the materials list here showed him what to get.</p></div></div>
+    <div class="test"><div style="display:flex;flex-direction:column;gap:8px"><span class="who">Salil Gupta</span><span class="small muted">Helped most by the Frame page</span><p style="margin:0;font-size:.95rem">Salil did not know how to make the frame at all, because he did not know how to model one in Fusion 360. He had not heard of OpenVSP, where you can model an aircraft first and then bring it into Fusion. He said finding that out really helped.</p></div></div>
+    <div class="test"><div style="display:flex;flex-direction:column;gap:8px"><span class="who">Anvay Mathur</span><span class="small muted">Helped most by the Dashboard calculator</span><p style="margin:0;font-size:.95rem">Anvay was interested in eVTOLs but did not know the calculations needed to design one, such as how the battery works and how lift works. He said the calculator on the Dashboard let him work them out.</p></div></div>
   </div>
-  <p class="muted" style="max-width:68ch">No reviews yet. These spaces are waiting for the first people who try it.</p>
  </div>
 </section>
 </main>
