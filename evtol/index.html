@@ -217,7 +217,7 @@ details.tbl td,details.tbl th{padding:4px 8px}
 .slot{margin:0;border:2px dashed var(--line);border-radius:10px;min-height:260px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:8px;padding:14px;background:repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in srgb,var(--line) 35%,transparent) 14px 15px);position:relative;min-width:0}
 .slot.wide{min-height:420px;grid-column:1/-1}
 .slot[data-kind="link"]{aspect-ratio:auto;min-height:150px}
-.slot.filled{aspect-ratio:auto;min-height:0}
+.slot.filled{aspect-ratio:auto;min-height:0;align-self:start}
 .cards.bench{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))}
 .cards.bench .slot{margin-top:6px}
 .slot.filled{border-style:solid;padding:0;background:var(--sunk);overflow:hidden;justify-content:flex-start;gap:0}
@@ -640,7 +640,6 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
       <figure class="slot wide" data-slot="f360-full" data-label="Full assembly" data-hint="Render of the whole aircraft"></figure>
       <figure class="slot" data-slot="f360-wing" data-label="Hollow wing section" data-hint="Section view showing the rod channel and support tree"></figure>
       <figure class="slot" data-slot="f360-joint" data-label="Flanged slide-in joint" data-hint="Close-up of a peg, socket and flange"></figure>
-      <figure class="slot" data-slot="f360-boom" data-label="Boom and motor mount" data-hint="The boom narrowing towards the propeller"></figure>
       <figure class="slot" data-slot="f360-fuse" data-label="Fuselage and cover" data-hint="One-piece fuselage with the cut-out cover"></figure>
       <figure class="slot" data-slot="f360-tail" data-label="Tail and boom joints" data-hint="How the tail slides onto the booms"></figure>
     </div>
@@ -836,6 +835,11 @@ var BUILTIN = {
   'vid-motors': { ar: '3/4', m: [['motor-1.mp4', 'A motor spinning up on the bench.'], ['motor-2.mp4', 'The same test from the other side.']] },
   'vid-radio': { m: [['radio.mp4', 'Moving the sticks on the Radiomaster Pocket and watching the channels respond in QGroundControl.']] },
   'vsp-model': { m: [['vsp.jpg', 'Aircraft geometry exported from OpenVSP as vortex lattice meshes for the wings, tail and fuselage, opened in ParaView.']] },
+  'f360-full': { m: [['f360-full.jpg', 'The whole aircraft in Fusion 360, pulled apart into the pieces I print: nose and fuselage, wing panels, lift motor arms, booms and tail.']] },
+  'f360-wing': { m: [['f360-wing.jpg', 'Two wing panels and a pair of lift motor arms. Each arm slides through the wing and carries a motor mount at its end.']] },
+  'f360-joint': { m: [['f360-joint.jpg', 'The joint between wing panels: three pegs on one panel slide into sockets in the next.']] },
+  'f360-fuse': { m: [['f360-fuse.jpg', 'The nose section of the fuselage with its cover lifted off.']] },
+  'f360-tail': { m: [['f360-tail.jpg', 'The tail, and the collars where it slides onto the two booms.']] },
   'cf-cut': { m: [['rods.jpg', 'Carbon fibre rods and tubes, taped at the cut marks before trimming.']] },
   'frame-photo': { m: [['frame.jpg', 'The sections printed so far, laid out with their carbon rods. The rest are still to print.']] },
   'mine-photo': { m: [['frame.jpg', 'My eVTOL so far: the printed sections with their carbon rods.']] }
