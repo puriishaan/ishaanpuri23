@@ -856,7 +856,12 @@ function renderSlot(f) {
   if (bi) {
     var gal = h('div', { className: 'gal' + (bi.m.length > 1 ? ' many' : '') });
     if (bi.ar) gal.style.setProperty('--ar', bi.ar);
-    bi.m.forEach(function (it) { gal.appendChild(h('figure', { className: 'm' }, [mediaEl('media/' + it[0], it[1]), h('figcaption', { textContent: it[1] })])); });
+    bi.m.forEach(function (it) {
+      var el = mediaEl('media/' + it[0], it[1]), fig = h('figure', { className: 'm' }, [el, h('figcaption', { textContent: it[1] })]);
+      /* a file that fails to load takes its frame with it, so no broken player is shown */
+      el.addEventListener('error', function () { fig.remove(); if (!gal.children.length) f.style.display = 'none'; });
+      gal.appendChild(fig);
+    });
     f.appendChild(gal);
   } else {
     f.appendChild(h('span', { className: 'kind', textContent: 'Coming soon' }));
