@@ -304,6 +304,7 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
   <div class="lede">
     <h1>Fly it here first</h1>
     <p>My eVTOL is a 2 kg electric aircraft that lifts off like a quadcopter and cruises on a wing. I am building it for Catalyst at Singapore American School. Drag the two sticks to fly it, and watch the wing take the weight off the rotors as it speeds up.</p>
+    <p>This site is also a guide. If you want to learn how eVTOLs work, or build one of your own, follow along with my process. Start with <a href="#evtols">eVTOLs</a> for the idea, go through <a href="#electronics">Electronics</a> and <a href="#frame">Frame</a> to see how I built mine, then use <a href="#make-it">Make it yourself</a> for the parts list, the steps and my design file.</p>
   </div>
 
   <div class="sec">
@@ -441,7 +442,7 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
   <div class="sec">
     <h2>Thrilling, daunting and important</h2>
     <div class="tdi">
-      <div><h3>Thrilling</h3><p>Nothing I have built before has left the ground. I have made turbulence sensors and gloves that translate sign language, and this is the first project that has to fly. One airframe gets to be a quadcopter and a plane.</p></div>
+      <div><h3>Thrilling</h3><p>I came into this with almost no electrical engineering experience. I have built turbulence sensors and gloves that translate sign language, but I had never soldered a power joint, wired an ESC or set up flight firmware. My aircraft has not flown yet. What makes it thrilling is where eVTOLs are going, and how much Singapore wants them. An air taxi flew over Marina Bay in 2019, NTU unveiled Singapore's first locally built full-size eVTOL in 2026, and the Home Team is exploring air taxis for medical emergencies. Electric aircraft that need no runway could change how a dense city moves people and reaches emergencies, and I get to build a small one myself.</p></div>
       <div><h3>Daunting</h3><p>Two aircraft have to work in one. Hover and wing flight each need their own calculations, and the hand-over between them is the hardest part to get right. I also had to learn to strip, solder and heat-shrink every power joint, design a printed structure that survives its own weight on one propeller, and set up flight firmware.</p></div>
       <div><h3>Important</h3><p>SAS is under construction. An aircraft that cruises on a wing can film a site for longer than a quadcopter on the same battery, then stop and hover where it needs a closer look. After the first test flight I am taking it to the school's construction team to see if it is useful to them.</p></div>
     </div>
@@ -561,20 +562,13 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
   </div></div>
 
   <div class="step"><div class="no">4</div><div class="body">
-    <h2>Control flow</h2>
-    <div class="slots">
-      <figure class="slot wide" data-slot="control-flow" data-label="Control flow diagram" data-hint="Lucidchart diagram of the whole control algorithm"></figure>
-    </div>
-  </div></div>
-
-  <div class="step"><div class="no">5</div><div class="body">
     <h2>All the hardware</h2>
     <div class="slots">
       <figure class="slot wide" data-slot="hardware-photo" data-label="Every component laid out" data-hint="The hardware photo from my Catalyst learning journal"></figure>
     </div>
   </div></div>
 
-  <div class="step"><div class="no">6</div><div class="body">
+  <div class="step"><div class="no">5</div><div class="body">
     <h2>Each system working on the bench</h2>
     <p class="muted" style="max-width:68ch">Test one system at a time, with the propellers off, before anything goes inside the airframe.</p>
     <div class="cards bench">
@@ -719,7 +713,7 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
  <div class="wrap">
   <div class="lede">
     <h1>Make it yourself</h1>
-    <p>Everything needed to build this aircraft: the parts I bought and what they cost, my design files, and the steps in the order I did them.</p>
+    <p>Everything needed to build this aircraft: the parts I bought and what they cost, my final design file, and the steps in the order I did them.</p>
   </div>
 
   <div class="sec">
@@ -739,14 +733,8 @@ footer{border-top:1px solid var(--line);padding:22px clamp(16px,3vw,36px) 40px;f
 
   <div class="sec">
     <h2>Files</h2>
-    <p class="muted" style="max-width:68ch">My design files, free to download and change.</p>
-    <div class="slots">
-      <figure class="slot" data-slot="file-f3d" data-kind="link" data-label="Fusion 360 design" data-hint="Link to the .f3d archive of the full assembly"></figure>
-      <figure class="slot" data-slot="file-step" data-kind="link" data-label="STEP files" data-hint="Link to STEP exports for other CAD programs"></figure>
-      <figure class="slot" data-slot="file-3mf" data-kind="link" data-label="Print-ready files" data-hint="Link to the 3MF or STL files with print settings"></figure>
-      <figure class="slot" data-slot="file-vsp" data-kind="link" data-label="OpenVSP model" data-hint="Link to the .vsp3 file"></figure>
-      <figure class="slot" data-slot="file-params" data-kind="link" data-label="Flight controller parameters" data-hint="Link to the saved parameter file from QGroundControl"></figure>
-    </div>
+    <p class="muted" style="max-width:68ch">My final design, free to download and change.</p>
+    <div class="cards"><div class="card"><h3>The whole aircraft, STL</h3><p>One STL file of the final design, exported from Fusion 360. It is 5.9 MB and its dimensions are in millimetres. Open it in a slicer or any CAD program.</p><p><a class="btn" href="https://ishaanpuri23.com/evtol/files/catalyst-evtol.stl" download>Download the STL</a></p></div></div>
   </div>
 
   <div class="sec">
@@ -841,8 +829,7 @@ var BUILTIN = {
   'f360-fuse': { m: [['f360-fuse.jpg', 'The nose section of the fuselage with its cover lifted off.']] },
   'f360-tail': { m: [['f360-tail.jpg', 'The tail, and the collars where it slides onto the two booms.']] },
   'cf-cut': { m: [['rods.jpg', 'Carbon fibre rods and tubes, taped at the cut marks before trimming.']] },
-  'frame-photo': { m: [['frame.jpg', 'The sections printed so far, laid out with their carbon rods. The rest are still to print.']] },
-  'mine-photo': { m: [['frame.jpg', 'My eVTOL so far: the printed sections with their carbon rods.']] }
+  'frame-photo': { m: [['frame.jpg', 'The sections printed so far, laid out with their carbon rods. The rest are still to print.']] }
 };
 function mediaEl(src, alt) {
   if (/\.mp4$/.test(src)) return h('video', { src: src, controls: true, preload: 'metadata', attrs: { playsinline: '', 'aria-label': alt } });
@@ -1031,7 +1018,7 @@ function renderTypes() {
     var ph = PHOTOS[t[0]], credit = ph[1] === 'PX4' ? 'PX4 User Guide, CC BY 4.0' : 'ArduPilot docs, CC BY-SA 3.0';
     return '<div class="type' + (t[0] === 'mine' ? ' mine' : '') + '"><figure class="photo' + (t[0] === 'heli' ? ' contain' : '') + '"><img src="img/' + t[0] + '.jpg" alt="' + ph[0] + '" loading="lazy"><figcaption>' + ph[0] + '. Photo: ' + credit + '.</figcaption></figure>' +
       '<div class="thead"><div><h3>' + t[1] + '</h3><span class="tag">' + t[2] + '</span></div>' + typeSvg(t[0]) + '</div>' +
-      (t[0] === 'mine' ? '<figure class="slot" data-slot="mine-photo" data-label="My eVTOL" data-hint="Photo of my own aircraft"></figure>' : '') + '<ul class="pc">' +
+      '<ul class="pc">' +
       t[3].map(function (x) { return '<li class="p"><span>' + x + '</span></li>'; }).join('') + t[4].map(function (x) { return '<li class="m"><span>' + x + '</span></li>'; }).join('') + '</ul></div>';
   }).join('');
 }
